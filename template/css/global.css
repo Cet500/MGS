@@ -1,0 +1,52 @@
+/* ------------------------------- start page ------------------------------- */
+
+.body-start-page{
+	margin: 0px;
+	padding: 0px;
+	
+	display: grid;
+	grid-template-areas: 'header header header'
+						 'aside  main   none'
+						 'footer footer footer';
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 30px 1fr auto;
+	
+	background: #3e3e3e;
+	color: white;
+}
+
+.start-page__header{
+	grid-area: header;
+	
+	text-align: center;
+	position: sticky;
+	top: 0px;
+
+	background: #1f6100;
+}
+.start-page__header-logo{
+	text-decoration: none;
+	font-family: Consolas;
+	font-size: 1.7em;
+	font-style: italic;
+
+	color: #ffffff;
+}
+
+.start-page__aside{
+	grid-area: aside;
+
+	display: grid;
+	grid-template-areas: 'none1 nav none2';
+	grid-template-columns: 1fr auto 1fr;
+	grid-template-rows: auto 1fr;
+}
+.start-page__aside-nav{
+	grid-area: nav;
+
+	padding: 5px 20px;
+	top: 40px;
+	position: sticky;
+
+	background: #5c5c5c;
+}
