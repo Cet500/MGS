@@ -1,6 +1,6 @@
 /* ------------------------------- start page ------------------------------- */ 
 
-.start-page__main-section{
+.start-page__main-section-games{
 	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
@@ -12,6 +12,21 @@
     border-bottom: 1px solid #2c2c2c;
 	background: #4c4c4c;
 }
+.start-page__main-section-pages{
+	text-align: center;
+	font-size: 1.4em;
+	font-family: Consolas;
+
+	border-bottom: 1px solid #2c2c2c;
+	background: #4c4c4c;
+}
+.start-page__main-section-pages a{
+	text-decoration: none;
+	padding: 0px 5px;
+
+	color: #ffffff;
+}
+
 
 .start-page__game-preview{
 	text-align: center;
@@ -31,3 +46,4 @@
 
 	background: #1f6100;
 }
+
