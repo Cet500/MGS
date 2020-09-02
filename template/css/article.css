@@ -1,6 +1,7 @@
-main{
+/*Привью*/
+.game_preview{
 	display: grid;
-	grid-template-areas: 'logo      tth'
+	grid-template-areas: 'logo      Menu'
 						 'main_text main_text'
 						 'trailers  trailers';
 	grid-template-columns: 250px 1fr;
@@ -9,29 +10,33 @@ main{
 	text-align: justify;
 	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-main .tth p{
+/*Меню*/
+.Menu{
 	margin: 0px 15px;
 	padding: 10px 0px;
 	border-bottom: 1px dashed black;
 }
-main .tth p:last-child{
+.Menu p:last-child{
 	border: none;
 }
-main .main_text h3{
+/*Основной текст*/
+.main_text h3{
 	margin-left: 4em;
 }
-main .main_text p{
+.main_textp p{
 	margin: 0px 1em;
 }
+/*Гриды*/
 .logo_game{
 	grid-area: logo;
 }
-.tth{
-	grid-area: tth;
+.Menu{
+	grid-area: Menu;
 }
 .main_text{
 	grid-area: main_text;
 }
+/*Трейлер*/
 .trailers{
 	grid-area: trailers;
 	margin: 15px 0px;
