@@ -1,6 +1,6 @@
-/* ------------------------------- start page ------------------------------- */
+/* ------------------------------- global ------------------------------- */
 
-.body-start-page{
+.global__body{
 	margin: 0px;
 	padding: 0px;
 	
@@ -8,14 +8,14 @@
 	grid-template-areas: 'header header header'
 						 'aside  main   none'
 						 'footer footer footer';
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
 	grid-template-rows: 30px 1fr auto;
 	
 	background: #3e3e3e;
 	color: white;
 }
 
-.start-page__header{
+.global__header{
 	grid-area: header;
 	
 	text-align: center;
@@ -24,7 +24,7 @@
 
 	background: #1f6100;
 }
-.start-page__header-logo{
+.global__header-logo{
 	text-decoration: none;
 	font-family: Consolas;
 	font-size: 1.7em;
@@ -33,20 +33,43 @@
 	color: #ffffff;
 }
 
-.start-page__aside{
+.global__aside{
 	grid-area: aside;
 
 	display: grid;
 	grid-template-areas: 'none1 nav none2';
-	grid-template-columns: 1fr auto 1fr;
+	grid-template-columns: 3fr auto 1fr;
 	grid-template-rows: auto 1fr;
 }
-.start-page__aside-nav{
+.global__aside-nav{
 	grid-area: nav;
 
 	padding: 5px 20px;
 	top: 40px;
 	position: sticky;
 
-	background: #5c5c5c;
+	font-family: Arial;
+
+	border: 1px solid #2c2c2c;
+	background: #4c4c4c;
+}
+.global__nav-list{
+	list-style: none;
+	padding: 0px;
+}
+.global__nav-list-item{
+
+}
+.global__aside-nav a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.global__main{
+	grid-area: main;
+
+	margin-top: 10px;
+
+	border-left:  1px solid #2c2c2c;
+	border-right: 1px solid #2c2c2c;
 }

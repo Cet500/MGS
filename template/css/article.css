@@ -1,46 +1,51 @@
-/*Привью*/
-.game_preview{
-	display: grid;
-	grid-template-areas: 'logo      Menu'
-						 'main_text main_text'
-						 'trailers  trailers';
-	grid-template-columns: 250px 1fr;
-	grid-template-rows: auto auto auto;
-	font-size: 1.05em;
+/* ------------------------------- article ------------------------------- */ 
+
+.article__body{
 	text-align: justify;
 	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/*Меню*/
-.Menu{
-	margin: 0px 15px;
-	padding: 10px 0px;
-	border-bottom: 1px dashed black;
+
+.article__main{
+	display: grid;
+	grid-template-areas: 'artcover info'
+						 'desctext desctext'
+						 'media    media';
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: auto auto auto;
+
+	font-size: 1.05em;
+
+	border-top: 1px solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
 }
-.Menu p:last-child{
-	border: none;
+
+.article-main__artcover-game{
+	grid-area: artcover;
 }
-/*Основной текст*/
-.main_text h3{
-	margin-left: 4em;
+.article-main__info-game{
+	grid-area: info;
+
+	margin: 15px;
+
+	border-bottom: 2px dashed #999999;
 }
-.main_textp p{
-	margin: 0px 1em;
+
+.article-main__text{
+	grid-area: desctext;
+
+	margin: 15px;
+
+	border-bottom: 2px dashed #999999;
 }
-/*Гриды*/
-.logo_game{
-	grid-area: logo;
+.article-main__text-header{
+	font-family: Consolas;
+	font-style: italic;
 }
-.Menu{
-	grid-area: Menu;
-}
-.main_text{
-	grid-area: main_text;
-}
-/*Трейлер*/
-.trailers{
-	grid-area: trailers;
+
+.article-main__media{
+	grid-area: media;
+
 	margin: 15px 0px;
 	padding-top: 15px;
-	border-top: 1px dashed black;
 	text-align: center;
 }

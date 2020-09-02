@@ -1,0 +1,33 @@
+/* ------------------------------- start page ------------------------------- */ 
+
+.start-page__main-section{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: stretch;
+
+    border-top: 1px solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
+	background: #4c4c4c;
+}
+
+.start-page__game-preview{
+	text-align: center;
+    width: 165px;
+    margin: 10px;
+}
+.start-page__game-preview a{
+	color: #ffffff;
+}
+
+.start-page__footer{
+	grid-area: footer;
+
+	text-align: center;
+	font-family: Consolas;
+	font-style: italic;
+
+	background: #1f6100;
+}

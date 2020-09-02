@@ -32,3 +32,7 @@
 
 - add legacy code in index git
 - add new features in template
+
+*Shima*
+
+- update template article
