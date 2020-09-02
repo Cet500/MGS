@@ -46,3 +46,6 @@
 - create DB
 - create parser
 - final update template
+
+## 03.09.2020
+
