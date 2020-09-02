@@ -25,3 +25,10 @@
 - add sections by template
 - find legacy parser
 - rewrate parser
+
+## 02.09.2020
+
+*Sergo*
+
+- add legacy code in index git
+- add new features in template
