@@ -1,28 +1,5 @@
 /* ------------------------------- start page ------------------------------- */ 
 
-.body-start-page{
-	margin: 0px;
-	padding: 0px;
-	
-	display: grid;
-	grid-template-areas: 'header header header'
-						 'aside  main   none'
-						 'footer footer footer';
-	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 30px 1fr auto;
-	
-	background: #3e3e3e;
-	color: white;
-}
-
-.start-page__main{
-	grid-area: main;
-
-	margin-top: 10px;
-
-	border-left:  1px solid #2c2c2c;
-	border-right: 1px solid #2c2c2c;
-}
 .start-page__main-section{
 	display: flex;
 	flex-direction: row;
