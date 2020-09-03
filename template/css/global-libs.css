@@ -3,6 +3,7 @@
 /* -------------------- btn-base -------------------- */
 
 .btn{
+	font-family: Consolas;
 	margin: .375rem;
 	color: inherit;
 	text-transform: uppercase;
@@ -232,7 +233,7 @@
 	display: block;
 	font-size: 1em;
 	color: #000000;
-	margin: 10px auto;
+	margin: 10px 5px;
 	padding: 5px 10px;
 	border-radius: 10px;
 	width: 95%;
