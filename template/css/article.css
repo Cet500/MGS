@@ -1,9 +1,13 @@
 /* ------------------------------- article ------------------------------- */ 
 
+/* -------------------- body -------------------- */
+
 .article__body{
 	text-align: justify;
 	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* -------------------- main -------------------- */
 
 .article__main{
 	display: grid;
@@ -19,6 +23,8 @@
     border-bottom: 2px solid #2c2c2c;
 }
 
+/* -------------------- content -------------------- */
+
 .article-main__artcover-game{
 	grid-area: artcover;
 }
@@ -29,7 +35,6 @@
 
 	border-bottom: 2px dashed #cccccc;
 }
-
 .article-main__text{
 	grid-area: desctext;
 
@@ -41,7 +46,6 @@
 	font-family: Consolas;
 	font-style: italic;
 }
-
 .article-main__media{
 	grid-area: media;
 

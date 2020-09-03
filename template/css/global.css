@@ -1,5 +1,7 @@
 /* ------------------------------- global ------------------------------- */
 
+/* -------------------- body -------------------- */
+
 .global__body{
 	margin: 0px;
 	padding: 0px;
@@ -14,6 +16,8 @@
 	background: #3e3e3e;
 	color: white;
 }
+
+/* -------------------- header -------------------- */
 
 .global__header{
 	grid-area: header;
@@ -33,6 +37,8 @@
 	color: #ffffff;
 }
 
+/* -------------------- aside -------------------- */
+
 .global__aside{
 	grid-area: aside;
 
@@ -41,6 +47,9 @@
 	grid-template-columns: 3fr auto 1fr;
 	grid-template-rows: auto 1fr;
 }
+
+/* -------------------- nav -------------------- */
+
 .global__aside-nav{
 	grid-area: nav;
 
@@ -53,26 +62,19 @@
 	border: 2px solid #2c2c2c;
 	background: #4c4c4c;
 }
+
+/* -------------------- nav-list -------------------- */
+
 .global__nav-list{
 	padding: 0px;
 
 	list-style: none;
-}
-.global__nav-list-item:hover{
-	background-color: #cccccc;
-}
-.global__nav-list-item:hover a{
-	color: #000000;
-}	
-.global__nav-list-item:first-child{
-	border-top: 1px solid #cccccc;
 }
 .global__nav-list-item{
 	padding: 5px;
 
 	border-bottom: 1px solid #cccccc;
 }
-
 .global__nav-list-item a{
 	display: block;
 	width: 100%;
@@ -80,6 +82,17 @@
 	text-decoration: none;
 	color: #ffffff;
 }
+.global__nav-list-item:hover{
+	background-color: #cccccc;
+}
+.global__nav-list-item:first-child{
+	border-top: 1px solid #cccccc;
+}
+.global__nav-list-item:hover a{
+	color: #000000;
+}
+
+/* -------------------- main -------------------- */
 
 .global__main{
 	grid-area: main;
@@ -89,4 +102,16 @@
 	border-top: 2px solid #2c2c2c;
 	border-left:  2px solid #2c2c2c;
 	border-right: 2px solid #2c2c2c;
+}
+
+/* -------------------- footer -------------------- */
+
+.global__footer{
+	grid-area: footer;
+
+	text-align: center;
+	font-family: Consolas;
+	font-style: italic;
+
+	background: #1f6100;
 }
