@@ -1,1 +1,61 @@
- 
+/* ------------------------------- search page ------------------------------- */
+
+/* -------------------- section -------------------- */
+
+.search__main-section-games{
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: stretch;
+
+    border-bottom: 2px solid #2c2c2c;
+	background: #4c4c4c;
+}
+.search__game-preview{
+	margin: 10px 20px;
+
+	border: 1px solid #999999;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.search__game-preview a{
+	display: grid;
+	grid-template-areas: 'game_cover game_name'
+						 'game_cover game_desc'
+						 'game_cover game_tags';
+	grid-template-columns: 120px auto;
+	padding: 10px;
+
+	font-family: Consolas;
+    font-style: italic;
+    text-decoration: none;
+
+	color: #ffffff;
+}
+.search__game-preview img{
+	grid-area: game_cover;
+
+	float: left;
+
+	border: 1px solid #999999;
+}
+.search__game-preview-name{
+	grid-area: game_name;
+
+	margin: 0px;
+
+	font-size: 1.2em;
+}
+.search__game-preview-desc{
+	grid-area: game_desc;
+
+	margin: 0px;
+}
+.search__game-preview-tags{
+	grid-area: game_tags;
+
+	margin: 0px;
+
+	color: #cccccc;
+}

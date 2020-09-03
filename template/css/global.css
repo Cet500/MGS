@@ -154,6 +154,23 @@
 	border-right: 2px solid #2c2c2c;
 }
 
+/* -------------------- section -------------------- */
+
+.global__main-section-header{
+	padding: 4px;
+
+	text-align: center;
+	font-size: 1.3em;
+	font-family: Consolas;
+	font-style: italic;
+
+	border-bottom: 2px dashed #cccccc;
+	background: #5c5c5c;
+}
+.global__main-section-header h3{
+	margin: 0px;
+}
+
 /* -------------------- footer -------------------- */
 
 .global__footer{
