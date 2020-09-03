@@ -68,25 +68,26 @@
 }
 .article__main-comment{
 	display: grid;
-	grid-template-areas: 'com_name  com_time     none1'
-						 'com_text  com_text     com_text'
-						 'com_likes com_dislikes none2';
+	grid-template-areas: 'com_name  com_name  com_time'
+						 'com_text  com_text  com_text'
+						 'com_carma com_carma none2';
 	grid-template-columns: auto auto auto;
-	grid-template-rows: 1em auto 1em;
+	grid-template-rows: auto auto auto;
 
-	padding: 5px 10px 10px 10px;
+	padding: 5px 10px 5px 10px;
 	margin: 5px 20px 20px;
+	border-top-right-radius: 1em;
 
 	border: 1px solid #999999;
 	background: #444444; 
 }
 .article__comment-name{
 	grid-area: com_name;
-
-	margin-right: 10px;
 }
 .article__comment-time{
 	grid-area: com_time;
+
+	text-align: right;
 
 	color: #aaaaaa;
 }
@@ -96,9 +97,12 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.article__comment-carma{
+	grid-area: com_carma;
+}
 .article__comment-likes{
-	grid-area: com_likes;
+	margin-right: 10px;
 }
 .article__comment-dislikes{
-	grid-area: com_dislikes;
+	margin-left: 10px;
 }
