@@ -207,3 +207,40 @@
 	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
+
+/* -------------------- input-base -------------------- */
+
+.input{
+	border: none;
+}
+.input:focus{
+	outline: none;
+	outline: 1px solid #2d2d2d;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+.input::placeholder{
+	color: #a2a2a2;
+}
+.input:focus::placeholder{
+	color: transparent;
+}
+
+/* -------------------- input for forms -------------------- */
+
+.input-form{
+	display: block;
+	font-size: 1em;
+	color: #000000;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border-radius: 10px;
+	width: 95%;
+	font-family: Arial;
+
+	border: 1px solid #5d5d5d;
+}
+.input-form:focus{
+	outline: none;
+	border: 1px solid #666666;
+}
