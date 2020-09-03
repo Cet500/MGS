@@ -50,17 +50,33 @@
 
 	font-family: Arial;
 
-	border: 1px solid #2c2c2c;
+	border: 2px solid #2c2c2c;
 	background: #4c4c4c;
 }
 .global__nav-list{
-	list-style: none;
 	padding: 0px;
+
+	list-style: none;
+}
+.global__nav-list-item:hover{
+	background-color: #cccccc;
+}
+.global__nav-list-item:hover a{
+	color: #000000;
+}	
+.global__nav-list-item:first-child{
+	border-top: 1px solid #cccccc;
 }
 .global__nav-list-item{
+	padding: 5px;
 
+	border-bottom: 1px solid #cccccc;
 }
-.global__aside-nav a{
+
+.global__nav-list-item a{
+	display: block;
+	width: 100%;
+
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -70,6 +86,7 @@
 
 	margin-top: 10px;
 
-	border-left:  1px solid #2c2c2c;
-	border-right: 1px solid #2c2c2c;
+	border-top: 2px solid #2c2c2c;
+	border-left:  2px solid #2c2c2c;
+	border-right: 2px solid #2c2c2c;
 }

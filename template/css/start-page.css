@@ -1,6 +1,21 @@
 /* ------------------------------- start page ------------------------------- */ 
 
-.start-page__main-section{
+.start-page__main-section-header{
+	padding: 4px;
+
+	text-align: center;
+	font-size: 1.3em;
+	font-family: Consolas;
+	font-style: italic;
+
+	border-bottom: 2px dashed #cccccc;
+	background: #5c5c5c;
+}
+.start-page__main-section-header h3{
+	margin: 0px;
+}
+
+.start-page__main-section-games{
 	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
@@ -8,9 +23,23 @@
     justify-content: space-between;
     align-items: stretch;
 
-    border-top: 1px solid #2c2c2c;
-    border-bottom: 1px solid #2c2c2c;
+    border-bottom: 2px solid #2c2c2c;
 	background: #4c4c4c;
+}
+
+.start-page__main-section-pages{
+	text-align: center;
+	font-size: 1.4em;
+	font-family: Consolas;
+
+	border-bottom: 2px solid #2c2c2c;
+	background: #4c4c4c;
+}
+.start-page__main-section-pages a{
+	text-decoration: none;
+	padding: 0px 5px;
+
+	color: #ffffff;
 }
 
 .start-page__game-preview{
@@ -31,3 +60,4 @@
 
 	background: #1f6100;
 }
+
