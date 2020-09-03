@@ -55,7 +55,7 @@
 }
 .select:hover,
 .select:focus,
-.select:active {
+.select:active{
 	outline: none;
 }
 .select:focus{
@@ -65,54 +65,57 @@
 
 /* -------------------- select-size -------------------- */
 
-.select.select-lg {
+.select.select-lg{
 	padding: .4375rem 1.2rem;
 	font-size: .94rem
 }
-.select.select-md {
+.select.select-md{
 	padding: .4375rem .8rem;
 	font-size: .875rem
 }
-.select.select-sm {
+.select.select-sm{
 	padding: .4375rem .8rem;
 	font-size: 0.75rem
 }
 
 /* -------------------- select-color -------------------- */
 
-.select-primary {
+.select-primary{
 	color: #fff;
 	background-color: #4285f4
 }
-.select-primary:hover {
+.select-primary:hover{
 	color: #fff;
 	background-color: #5a95f5
 }
 .select-primary:focus,
-.select-primary.focus {
+.select-primary.focus{
 	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
 .select-primary:focus,
 .select-primary:active,
-.select-primary.active {
+.select-primary.active{
 	background-color: #0b51c5
 }
-.select-secondary {
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.select-secondary{
 	color: #fff;
 	background-color: #a6c
 }
-.select-secondary:hover {
+.select-secondary:hover{
 	color: #fff;
 	background-color: #b579d2
 }
 .select-secondary:focus,
-.select-secondary.focus {
+.select-secondary.focus{
 	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
 .select-secondary:focus,
 .select-secondary:active,
-.select-secondary.active {
+.select-secondary.active{
 	background-color: #739
 }
