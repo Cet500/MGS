@@ -49,3 +49,18 @@
 
 ## 03.09.2020
 
+*Sergo*
+
+- update templates
+- update GitHub rep
+- add comments and search
+- add css libs
+
+*Shima*
+
+- add docs
+- add reports
+
+*Plans*
+
+- Django
