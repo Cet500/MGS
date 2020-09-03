@@ -53,7 +53,7 @@
 
 - update templates
 - update GitHub rep
-- add comments and search
+- add menu, comments and search
 - add css libs
 
 *Shima*
