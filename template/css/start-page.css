@@ -1,5 +1,7 @@
 /* ------------------------------- start page ------------------------------- */ 
 
+/* -------------------- sections -------------------- */
+
 .start-page__main-section-header{
 	padding: 4px;
 
@@ -42,6 +44,8 @@
 	color: #ffffff;
 }
 
+/* -------------------- content -------------------- */
+
 .start-page__game-preview{
 	text-align: center;
     width: 165px;
@@ -50,14 +54,3 @@
 .start-page__game-preview a{
 	color: #ffffff;
 }
-
-.start-page__footer{
-	grid-area: footer;
-
-	text-align: center;
-	font-family: Consolas;
-	font-style: italic;
-
-	background: #1f6100;
-}
-
