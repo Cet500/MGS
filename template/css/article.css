@@ -3,7 +3,6 @@
 /* -------------------- body -------------------- */
 
 .article__body{
-	text-align: justify;
 	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -13,9 +12,10 @@
 	display: grid;
 	grid-template-areas: 'artcover info'
 						 'desctext desctext'
-						 'media    media';
+						 'media    media'
+						 'comments comments';
 	grid-template-columns: 250px 1fr;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto auto auto auto;
 
 	font-size: 1.05em;
 
@@ -25,31 +25,80 @@
 
 /* -------------------- content -------------------- */
 
-.article-main__artcover-game{
+.article__main-artcover-game{
 	grid-area: artcover;
+
+    border-right: 2px solid #2c2c2c;
+    border-bottom: 2px solid #2c2c2c;
 }
-.article-main__info-game{
+.article__main-info-game{
 	grid-area: info;
 
 	margin: 15px;
 
 	border-bottom: 2px dashed #cccccc;
 }
-.article-main__text{
+.article__main-text{
 	grid-area: desctext;
 
 	margin: 15px;
 
+	text-align: justify;
+
 	border-bottom: 2px dashed #999999;
 }
-.article-main__text-header{
+.article__main-text-header{
 	font-family: Consolas;
 	font-style: italic;
 }
-.article-main__media{
+.article__main-media{
 	grid-area: media;
 
-	margin: 15px 0px;
-	padding-top: 15px;
+	margin: 0px 15px 15px 15px;
+	padding-bottom: 15px;
 	text-align: center;
+
+	border-bottom: 2px dashed #999999;
+}
+
+/* -------------------- comments -------------------- */
+
+.article__main-comments-block{
+	grid-area: comments;
+}
+.article__main-comment{
+	display: grid;
+	grid-template-areas: 'com_name  com_time     none1'
+						 'com_text  com_text     com_text'
+						 'com_likes com_dislikes none2';
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 1em auto 1em;
+
+	padding: 5px 10px 10px 10px;
+	margin: 5px 20px 20px;
+
+	border: 1px solid #999999;
+	background: #444444; 
+}
+.article__comment-name{
+	grid-area: com_name;
+
+	margin-right: 10px;
+}
+.article__comment-time{
+	grid-area: com_time;
+
+	color: #aaaaaa;
+}
+.article__comment-text{
+	grid-area: com_text;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.article__comment-likes{
+	grid-area: com_likes;
+}
+.article__comment-dislikes{
+	grid-area: com_dislikes;
 }
