@@ -55,6 +55,7 @@
 - update GitHub rep
 - add menu, comments and search
 - add css libs
+- delete old and legacy code
 
 *Shima*
 
