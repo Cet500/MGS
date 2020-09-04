@@ -1,0 +1,123 @@
+/* ------------------------------- article ------------------------------- */ 
+
+/* -------------------- body -------------------- */
+
+.article__body{
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* -------------------- main -------------------- */
+
+.article__main{
+	display: grid;
+	grid-template-areas: 'artcover info'
+						 'desctext desctext'
+						 'media    media'
+						 'form     form'
+						 'comments comments';
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: auto auto auto auto auto;
+
+	font-size: 1.05em;
+
+	border-top: 2px solid #2c2c2c;
+    border-bottom: 2px solid #2c2c2c;
+}
+
+/* -------------------- content -------------------- */
+
+.article__main-artcover-game{
+	grid-area: artcover;
+
+    border-right: 2px solid #2c2c2c;
+    border-bottom: 2px solid #2c2c2c;
+}
+.article__main-info-game{
+	grid-area: info;
+
+	margin: 15px;
+
+	border-bottom: 2px dashed #cccccc;
+}
+.article__main-text{
+	grid-area: desctext;
+
+	margin: 15px;
+
+	text-align: justify;
+
+	border-bottom: 2px dashed #999999;
+}
+.article__main-text-header{
+	font-family: Consolas;
+	font-style: italic;
+}
+.article__main-media{
+	grid-area: media;
+
+	margin: 0px 15px 15px 15px;
+	padding-bottom: 15px;
+	text-align: center;
+
+	border-bottom: 2px dashed #999999;
+}
+
+/* ---------------- form for write comment ---------------- */
+
+.article__main-comments-write{
+	grid-area: form;
+}
+.article__main-form{
+	padding: 5px 10px;
+	margin: 5px 20px 20px;
+
+	border-top-right-radius: 1em;
+
+	border: 1px solid #999999;
+}
+
+/* -------------------- comments -------------------- */
+
+.article__main-comments-block{
+	grid-area: comments;
+}
+.article__main-comment{
+	display: grid;
+	grid-template-areas: 'com_name  com_name  com_time'
+						 'com_text  com_text  com_text'
+						 'com_carma com_carma none2';
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+
+	padding: 5px 10px;
+	margin: 5px 20px 20px;
+	border-top-right-radius: 1em;
+
+	border: 1px solid #999999;
+	background: #444444; 
+}
+.article__comment-name{
+	grid-area: com_name;
+}
+.article__comment-time{
+	grid-area: com_time;
+
+	text-align: right;
+
+	color: #aaaaaa;
+}
+.article__comment-text{
+	grid-area: com_text;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.article__comment-carma{
+	grid-area: com_carma;
+}
+.article__comment-likes{
+	margin-right: 10px;
+}
+.article__comment-dislikes{
+	margin-left: 10px;
+}
