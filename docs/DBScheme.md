@@ -8,6 +8,8 @@
 - id_company_creator
 - id_company_publisher
 - is_tablet
+- datatime_add
+- user_add
 
 
 **companies_create**
@@ -103,6 +105,7 @@
 - dislikes
 - is_positive
 
+
 **users**
 
 - id
@@ -112,4 +115,4 @@
 - pass_hash
 - avatar
 - datatime_reg
-- datatime_last_login
+

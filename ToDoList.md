@@ -43,9 +43,10 @@
 
 *Plans*
 
-- create DB
-- create parser
-- final update template
+- (+) create DB
+- ( ) create parser
+- (~) final update template
+- ( ) create server-side
 
 ## 03.09.2020
 
@@ -64,4 +65,24 @@
 
 *Plans*
 
-- Django
+- (>) Django
+
+## 04.09.2020
+
+*Sergo*
+
+- update templates
+- add template for search results
+- add template for games of genre
+- create DB
+- create tables in DB and sql-dump of tables structure
+
+*Shima*
+
+- update reports
+
+*Plans*
+
+- ( ) PHP
+- ( ) JS
+- ( ) server-side ( backend )
