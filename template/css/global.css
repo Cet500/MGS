@@ -103,7 +103,6 @@
 .global__aside-nav{
 	grid-area: nav;
 
-	padding: 5px 20px;
 	top: 42px;
 	position: sticky;
 
@@ -112,16 +111,30 @@
 	border: 2px solid #2c2c2c;
 	background: #4c4c4c;
 }
+.global__aside-nav h3{
+	margin: 0px;
+	padding: 6px 20px;
+
+	text-align: center;
+	font-size: 1.3em;
+	font-family: Consolas;
+	font-style: italic;
+
+	border-bottom: 2px dashed #cccccc;
+	background: #326619;
+}
 
 /* -------------------- nav-list -------------------- */
 
 .global__nav-list{
 	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 1px;
 
 	list-style: none;
 }
 .global__nav-list-item{
-	padding: 5px 30px 5px 10px;
+	padding: 5px 50px 5px 30px;
 
 	border-bottom: 1px dashed #999999;
 }
@@ -133,13 +146,17 @@
 	color: #ffffff;
 }
 .global__nav-list-item a::before {
-  content: "● ";
+	content: "» ";
 }
 .global__nav-list-item:hover{
-	background-color: #1f6100;
+	border-bottom: 2px solid #ffffff;
+	background-color: #3e5235;
 }
-.global__nav-list-item:first-child{
-	border-top: 1px dashed #999999;
+.global__nav-list-item:hover a{
+	color: #6de236;
+}
+.global__nav-list-item:hover a::before {
+	color: #6de236;
 }
 
 /* -------------------- main -------------------- */
@@ -160,15 +177,62 @@
 	padding: 4px;
 
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1em;
 	font-family: Consolas;
 	font-style: italic;
 
 	border-bottom: 2px dashed #cccccc;
-	background: #5c5c5c;
+	background: #326619;
 }
-.global__main-section-header h3{
+.global__main-section-header h2{
 	margin: 0px;
+}
+
+.global__main-section-games{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: stretch;
+
+    border-bottom: 2px solid #2c2c2c;
+	background: #4c4c4c;
+}
+
+/* -------------------- content -------------------- */
+
+.global__game-preview{
+    width: 165px;
+    margin: 10px;
+
+    font-family: Consolas;
+    font-style: italic;
+    text-align: center;
+
+    border: 1px solid #999999;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.global__game-preview a{
+	display: block;
+	height: 100%;
+
+	text-decoration: none;
+
+	color: #ffffff;
+}
+.global__game-preview:hover{
+	border: 1px solid #cccccc;
+	outline: 1px solid #cccccc;
+	background-color: #3e5235;
+}
+.global__game-preview:hover a{
+	color: #6de236;
+}
+.global__game-preview img{
+	margin-top: 8px;
+
+	border: 1px solid #999999;
 }
 
 /* -------------------- footer -------------------- */
