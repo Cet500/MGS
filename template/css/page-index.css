@@ -42,6 +42,11 @@
     border: 1px solid #999999;
     background-color: rgba(255, 255, 255, 0.1);
 }
+.start-page__game-preview:hover{
+	border: 1px solid #cccccc;
+	outline: 1px solid #cccccc;
+	background-color: rgba(255, 255, 255, 0.2);
+}
 .start-page__game-preview a{
 	display: block;
 	height: 100%;

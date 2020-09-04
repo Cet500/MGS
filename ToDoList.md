@@ -85,4 +85,6 @@
 
 - ( ) PHP
 - ( ) JS
-- ( ) server-side ( backend )
+- (+) enable server-side ( backend )
+- ( ) system of rating ( stars )
+- ( ) top - 10 of games
