@@ -19,6 +19,18 @@
 	border: 1px solid #999999;
 	background-color: rgba(255, 255, 255, 0.1);
 }
+.search__game-preview:hover{
+	border: 1px solid #cccccc;
+	outline: 1px solid #cccccc;
+	background-color: #3e5235;
+}
+.search__game-preview:hover .search__game-preview-name,
+.search__game-preview:hover .search__game-preview-desc{
+	color: #6de236;
+}
+.search__game-preview:hover .search__game-preview-tags{
+	color: #80af6a;
+}
 .search__game-preview a{
 	display: grid;
 	grid-template-areas: 'game_cover game_name'
