@@ -1,3 +1,5 @@
+<title>Parser links</title>
+
 <meta charset="utf-8">
 
 <style>
@@ -8,6 +10,7 @@
 	table{
 		border-collapse: collapse;
 		font-family: Consolas;
+		font-size: 0.8em;
 	}
 	table th{
 		background-color: #90ee90;
@@ -32,7 +35,7 @@
 	$id_block = '#dle-content';
 
 	print('<table>');
-	print('<thead><tr><th>page</th><th>id</th><th>name</th><th>link</th><th>image</th></tr><thead>');
+	print('<thead><tr><th>page</th><th>nm</th><th>name</th><th>link</th><th>image</th></tr><thead>');
 	print('<tbody>');
 
 	$i = 0;

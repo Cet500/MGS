@@ -1,3 +1,5 @@
+<title>Parser content</title>
+
 <meta charset="utf-8">
 
 <style>
@@ -24,19 +26,19 @@
 	}
 </style>
 
-
 <?php
 	require '../db.php';
 	require '../libs/simple_html_dom.php';
 
+	$limit    = 5;
 	$id_block = '#dle-content';
 	$pattern  = '/<p>  На этой странице по кнопке ниже вы можете([^=]*(?:=(?!end)[^=]*)*)/';
 	$pattern2 = '/<!--dle_list-->([^=]*(?:=(?!end)[^=]*)*)/';
 
-	$links = R::getAll('SELECT * FROM `parserlinks` LIMIT 5');
+	$links = R::getAll('SELECT * FROM `parserlinks` LIMIT ?', $limit);
 
 	print('<table>');
-	print('<thead><tr><th>id</th><th>name</th><th>image</th><th>info</th><th>require</th><th>text</th></tr><thead>');
+	print('<thead><tr><th>nm</th><th>name</th><th>image</th><th>info</th><th>require</th><th>text</th></tr><thead>');
 	print('<tbody>');
 
 	$i = 0;
@@ -81,3 +83,4 @@
 	}
 
 	print('</tbody></table>');
+?>

@@ -126,20 +126,6 @@
 		}
 	}
 
-
-	require 'php/db.php';
-
-	echo "<table>";
-	echo "<tr><th>ID</th><th>название игры</th></tr>";
-
-	$links = R::getAll('SELECT * FROM links');
-
-	$i = 0;
-	foreach ($links as $link) {
-		$i++;
-
-		echo '<tr><td>'.$i.'</td><td>'.$link['name'].'</td></tr>';
-	}
-
-	echo "</table>";
 */
+
+?>
