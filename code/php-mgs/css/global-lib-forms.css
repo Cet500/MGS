@@ -1,0 +1,121 @@
+/* ------------------------------- global-lib-forms ------------------------------- */ 
+
+/* -------------------- input-base -------------------- */
+
+.input{
+	border: none;
+}
+.input:focus{
+	outline: none;
+	outline: 1px solid #2d2d2d;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+.input::placeholder{
+	color: #a2a2a2;
+}
+.input:focus::placeholder{
+	color: transparent;
+}
+
+/* -------------------- input for forms -------------------- */
+
+.input-form{
+	display: block;
+	font-size: 1em;
+	color: #000000;
+	margin: 10px 5px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	width: 95%;
+	font-family: Arial;
+
+	border: 1px solid #5d5d5d;
+}
+.input-form:focus{
+	outline: none;
+	border: 1px solid #666666;
+}
+
+/* -------------------- select-base -------------------- */
+
+.select{
+	font-size: 1em;
+	border-radius: .125rem;
+	border: 1px solid gray;
+	background-color: #fcf9ea;
+	word-wrap: break-word;
+	white-space: normal;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: .375rem;
+	padding: .4375rem 1.07rem;
+	font-size: .81rem;
+	font-weight: 500;
+}
+.select:hover,
+.select:focus,
+.select:active{
+	outline: none;
+}
+.select:focus{
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+/* -------------------- select-size -------------------- */
+
+.select.select-lg{
+	padding: .4375rem 1.2rem;
+	font-size: .94rem
+}
+.select.select-md{
+	padding: .4375rem .8rem;
+	font-size: .875rem
+}
+.select.select-sm{
+	padding: .4375rem .8rem;
+	font-size: 0.75rem
+}
+
+/* -------------------- select-color -------------------- */
+
+.select-primary{
+	color: #fff;
+	background-color: #4285f4
+}
+.select-primary:hover{
+	color: #fff;
+	background-color: #5a95f5
+}
+.select-primary:focus,
+.select-primary.focus{
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+.select-primary:focus,
+.select-primary:active,
+.select-primary.active{
+	background-color: #0b51c5
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.select-secondary{
+	color: #fff;
+	background-color: #a6c
+}
+.select-secondary:hover{
+	color: #fff;
+	background-color: #b579d2
+}
+.select-secondary:focus,
+.select-secondary.focus{
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+.select-secondary:focus,
+.select-secondary:active,
+.select-secondary.active{
+	background-color: #739
+}

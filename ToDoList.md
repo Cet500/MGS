@@ -41,6 +41,10 @@
 - update info for parser
 - know Git
 
+*Daniel*
+
+- joined command of MGS
+
 *Plans*
 
 - (+) create DB
@@ -63,6 +67,10 @@
 - add docs
 - add reports
 
+*Zoya*
+
+- joined command of MGS
+
 *Plans*
 
 - (>) Django
@@ -76,6 +84,7 @@
 - add template for games of genre
 - create DB
 - create tables in DB and sql-dump of tables structure
+- add right aside with top games
 
 *Shima*
 
@@ -85,4 +94,7 @@
 
 - ( ) PHP
 - ( ) JS
-- ( ) server-side ( backend )
+- (+) enable server-side ( backend )
+- ( ) system of rating ( stars )
+- (+) top - 5 of games
+- ( ) different tops - rating, popular and time

@@ -2,18 +2,6 @@
 
 /* -------------------- sections -------------------- */
 
-.start-page__main-section-games{
-	display: flex;
-	flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    justify-content: space-between;
-    align-items: stretch;
-
-    border-bottom: 2px solid #2c2c2c;
-	background: #4c4c4c;
-}
-
 .start-page__main-section-pages{
 	text-align: center;
 	font-size: 1.4em;
@@ -27,31 +15,4 @@
 	padding: 0px 5px;
 
 	color: #ffffff;
-}
-
-/* -------------------- content -------------------- */
-
-.start-page__game-preview{
-    width: 165px;
-    margin: 10px;
-
-    font-family: Consolas;
-    font-style: italic;
-    text-align: center;
-
-    border: 1px solid #999999;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-.start-page__game-preview a{
-	display: block;
-	height: 100%;
-
-	text-decoration: none;
-
-	color: #ffffff;
-}
-.start-page__game-preview img{
-	margin-top: 8px;
-
-	border: 1px solid #999999;
 }
