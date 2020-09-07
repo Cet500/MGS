@@ -23,8 +23,8 @@
 - (+) full rewrite template of site
 - (~) add new features by template of site
 - (+) add sections by template
-- ( ) find legacy parser
-- ( ) rewrate parser
+- (+) find legacy parser
+- (+) rewrate parser
 
 ## 02.09.2020
 
@@ -48,9 +48,9 @@
 *Plans*
 
 - (+) create DB
-- ( ) create parser
+- (+) create parser
 - (~) final update template
-- ( ) create server-side
+- (+) create server-side
 
 ## 03.09.2020
 
@@ -92,9 +92,23 @@
 
 *Plans*
 
-- ( ) PHP
+- (+) PHP
 - ( ) JS
 - (+) enable server-side ( backend )
 - ( ) system of rating ( stars )
 - (+) top - 5 of games
 - ( ) different tops - rating, popular and time
+
+## 07.09.2020
+
+*Sergo*
+
+- add parser of links
+
+*Shima*
+
+- update reports
+
+*Plans*
+
+- ( ) gui for parser

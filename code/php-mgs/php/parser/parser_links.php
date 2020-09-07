@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+
 <style>
 	body{
 		padding: 0px;
@@ -20,11 +21,6 @@
 		border: 1px solid gray;
 		padding: 3px 7px;
 	}
-	.h{
-		background-color: #90ee90;
-		text-align: center;
-		border: 1px solid black;
-	}
 </style>
 
 <?php
@@ -32,8 +28,8 @@
 	require '../libs/simple_html_dom.php';
 
 	$url = 'https://moreigr.com/';
-	$pages = '166'; //166
-	$id_block = '#dle-content'; // .short-story > a
+	$pages = '166';
+	$id_block = '#dle-content';
 
 	print('<table>');
 	print('<thead><tr><th>page</th><th>id</th><th>name</th><th>link</th><th>image</th></tr><thead>');
@@ -63,5 +59,4 @@
 	};
 
 	print('</tbody></table>'); 
-
 ?>
