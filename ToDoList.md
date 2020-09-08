@@ -112,3 +112,18 @@
 *Plans*
 
 - ( ) gui for parser
+
+## 08.09.2020
+
+*Sergo*
+
+- parsed all data about games
+- update backend
+
+*Shima*
+
+- final update report
+
+*Plans*
+
+- ( ) split data on tables
