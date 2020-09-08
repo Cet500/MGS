@@ -1,15 +1,14 @@
-
-**games**
+**comments**
 
 - id
-- name
-- description
-- date_relize
-- id_company_creator
-- id_company_publisher
-- is_tablet
-- datatime_add
-- user_add
+- id_game
+- id_user
+- datatime_write
+- name_comment
+- text_comment
+- likes
+- dislikes
+- is_positive
 
 
 **companies_create**
@@ -27,16 +26,26 @@
 - description
 - year_create
 
-**genres**
+
+**game_genres**
 
 - id
-- genre
+- id_game
+- id_genre
 
 
-**langs**
+**game_subtitles_lang**
 
 - id
-- lang
+- id_game
+- id_subtitles
+
+
+**game_tags**
+
+- id
+- id_game
+- id_tags
 
 
 **game_text_lang**
@@ -53,17 +62,48 @@
 - id_lang
 
 
-**game_subtitles_lang**
+**games**
 
 - id
-- id_game
-- id_subtitles
+- name
+- description
+- date_relize
+- id_company_creator
+- id_company_publisher
+- is_tablet
+- datatime_add
+- user_add
 
-**game_genres**
+
+**genres**
 
 - id
-- id_game
-- id_genre
+- genre
+
+
+**langs**
+
+- id
+- lang
+
+
+**parserdata**
+
+- id
+- name
+- image_url
+- info
+- system_require
+- features
+- text
+
+
+**parserlinks**
+
+- id
+- name
+- link_url
+- image_url
 
 
 **system_requare**
@@ -86,26 +126,6 @@
 - description
 
 
-**game_tags**
-
-- id
-- id_game
-- id_tags
-
-
-**comments**
-
-- id
-- id_game
-- id_user
-- datatime_write
-- name_comment
-- text_comment
-- likes
-- dislikes
-- is_positive
-
-
 **users**
 
 - id
@@ -115,4 +135,3 @@
 - pass_hash
 - avatar
 - datatime_reg
-
