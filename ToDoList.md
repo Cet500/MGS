@@ -127,3 +127,23 @@
 *Plans*
 
 - ( ) split data on tables
+
+## 09.09.2020
+
+*Sergo*
+
+- relocated and fixed data in tables
+- write and rewrite scriptes of relocate
+
+## 10.09.2020
+
+*Sergo*
+
+- relocated and fixed data in tables
+- write and rewrite scriptes of relocate
+- delete legacy and temporal data
+
+*Plans*
+
+- ( ) write a report
+- ( ) final fix data in DB
