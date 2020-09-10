@@ -29,49 +29,45 @@
 
 <?php
 	
-/*
 	require '../db.php';
 
 	$a = 0;
-	$b = 0;
+	$info = R::getAll('SELECT id, info, system_require FROM parserdata');
 	$array = [];
 
-	$games = R::getAll('SELECT * FROM `parserdata`');
-
-	foreach ( $games as $game ) {
+	foreach ($info as $info_item) {
 		$a++;
 		$b = 0;
 		$array[$a] = [];
 
-		$str = $game['system_require'];
+		$str = $info_item['info'];
 		$str = substr($str, 4, -5);
 		$array_strs = explode("</li><li>", $str);
 
 		foreach ($array_strs as $array_str) {
 			$b++;
-			$array[$a][0]  = $game['id'];
-			$array[$a][$b] = multi_explode(array(":", ": ", ":  ", ":	", "	"), $array_str);	
+			$array[$a][0]  = $info_item['id'];
+			$array[$a][$b] = explode(': ', $array_str);
 		}
-
 	}
 
 	print('<table style="width: 1000px;">');
 
 	foreach ($array as $arr) {
-		for ($i = 1; $i < count($arr); $i++) { 
-			print('<tr><td>'.$arr[0].'</td><td>'.$arr[$i][0].'</td><td>'.$arr[$i][1].'</td></tr>');
+		for ($i = 1; $i < count($arr); $i++) {
+			if (isset($arr[$i][1])) {
+				print('<tr><td>'.$arr[0].'</td><td>'.$arr[$i][0].'</td><td>'.$arr[$i][1].'</td></tr>');
 
-			$sysreqdata = R::dispense('parsersysreq');
-				$sysreqdata->id_game        = $arr[0];
-				$sysreqdata->sys_part       = $arr[$i][0];
-				$sysreqdata->sys_require    = $arr[$i][1];
-			R::store($sysreqdata);
+				$sysreqdata = R::dispense('parserinfo');
+					$sysreqdata->id_game = $arr[0];
+					$sysreqdata->part    = $arr[$i][0];
+					$sysreqdata->value   = $arr[$i][1];
+				R::store($sysreqdata);
+			}
 		}
 	}
 
-	// print('</table>');
-
-	// print_r(array_unique($paramets));
+	print('</table>');
 
 	// $paramets = [];
 	// $i = 0;
@@ -83,11 +79,4 @@
 	// 	}
 	// }
 
-	// print_r(array_unique($paramets));
-
-
-	function multi_explode ($delimiters,$string) {
-		$ready = str_replace($delimiters, $delimiters[0], $string);
-		$launch = explode($delimiters[0], $ready);
-		return  $launch;
-	}
+	// print_r($paramets);

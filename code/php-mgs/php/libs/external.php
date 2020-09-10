@@ -41,3 +41,9 @@
 		print(' ... ');
 		print('<a href="index.php?num_page='.$last.'&num_games='.$num_games.'&num_genre='.$num_genre.'">последняя</a>');
 	}
+
+	function multi_explode ($delimiters,$string) {
+		$ready = str_replace($delimiters, $delimiters[0], $string);
+		$launch = explode($delimiters[0], $ready);
+		return  $launch;
+	}
