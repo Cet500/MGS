@@ -31,52 +31,52 @@
 	
 	require '../db.php';
 
-	$a = 0;
-	$info = R::getAll('SELECT id, info, system_require FROM parserdata');
-	$array = [];
+	$info = R::getAll('SELECT * FROM `parserinfo` WHERE `part` = "  Язык интерфейса"');
 
-	foreach ($info as $info_item) {
-		$a++;
-		$b = 0;
-		$array[$a] = [];
+	// $array = [];
+	$i = 0;
 
-		$str = $info_item['info'];
-		$str = substr($str, 4, -5);
-		$array_strs = explode("</li><li>", $str);
+	// foreach ($info as $info_item) {
+	// 	$temp = [];
+	// 	// $array[$i] = $info_item["value"];
 
-		foreach ($array_strs as $array_str) {
-			$b++;
-			$array[$a][0]  = $info_item['id'];
-			$array[$a][$b] = explode(': ', $array_str);
-		}
-	}
+	// 	// print($info_item["id_game"]." | ".$info_item["value"]."<br>");
 
-	print('<table style="width: 1000px;">');
+	// 	$temp = explode(', ', $info_item["value"]);
 
-	foreach ($array as $arr) {
-		for ($i = 1; $i < count($arr); $i++) {
-			if (isset($arr[$i][1])) {
-				print('<tr><td>'.$arr[0].'</td><td>'.$arr[$i][0].'</td><td>'.$arr[$i][1].'</td></tr>');
-
-				$sysreqdata = R::dispense('parserinfo');
-					$sysreqdata->id_game = $arr[0];
-					$sysreqdata->part    = $arr[$i][0];
-					$sysreqdata->value   = $arr[$i][1];
-				R::store($sysreqdata);
-			}
-		}
-	}
-
-	print('</table>');
-
-	// $paramets = [];
-	// $i = 0;
-
-	// foreach ($array as $arr) {
-	// 	foreach ($arr as $a) {
+	// 	foreach ($temp as $temp_item) {
 	// 		$i++;
-	// 		$paramets[$i] = $a[0];
+	// 		$array[$i] = $temp_item;
 	// 	}
+
+	// 	// R::exec('UPDATE `games` SET `company_publisher` = ? WHERE `games`.`id` = ?;', [ $info_item["value"], $info_item["id_game"] ]);
+
 	// }
 
-	// print_r($paramets);
+
+	// $array = array_unique($array);
+
+	$array = R::getAll('SELECT * FROM `langs`');
+
+	foreach ($info as $info_item) {
+
+		$temp = [];
+		$temp = explode(', ', $info_item["value"]);
+
+		foreach ($temp as $temp_item) {
+
+			foreach ($array as $arr) {
+
+				if ($temp_item == $arr['lang']) {
+
+					print($info_item["id_game"]." | ".$info_item["value"]." | ".$arr['lang']." | ".$arr['id']."<br>");
+
+					R::exec('INSERT INTO `game_text_lang` (`id`, `id_game`, `id_lang`) VALUES (NULL, ?, ?)', [ $info_item['id_game'], $arr['id'] ]);
+				}
+
+			}
+
+		}
+
+	}
+	
