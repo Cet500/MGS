@@ -21,19 +21,23 @@
 - (+) create map genres and types
 - (+) create datalogic scheme
 - (+) full rewrite template of site
-- (~) add new features by template of site
+- (+) add new features by template of site
 - (+) add sections by template
 - (+) find legacy parser
 - (+) rewrate parser
 
 ## 02.09.2020
 
+*Project*
+
+- create GitHub repository
+- change GitHub repository to public
+
 *Sergo*
 
 - add legacy code in index git
 - add new features in template
 - create DB scheme
-- create GitHub rep
 
 *Shima*
 
@@ -49,7 +53,7 @@
 
 - (+) create DB
 - (+) create parser
-- (~) final update template
+- (+) final update template
 - (+) create server-side
 
 ## 03.09.2020
@@ -57,7 +61,6 @@
 *Sergo*
 
 - update templates
-- update GitHub rep
 - add menu, comments and search
 - add css libs
 - delete old and legacy code
@@ -126,7 +129,7 @@
 
 *Plans*
 
-- ( ) split data on tables
+- (+) split data on tables
 
 ## 09.09.2020
 
@@ -145,5 +148,33 @@
 
 *Plans*
 
-- ( ) write a report
+- (+) write a report
 - ( ) final fix data in DB
+
+## 11.09.2020
+
+*Sergo*
+
+- linked data about games and langs in DB
+
+## 12.09.2020
+
+- add schemes
+- add screenshots
+- final update a report
+
+## 14.09.2020
+
+*Sergo*
+
+- update all my documents
+
+## 15.09.2020
+
+*Project*
+
+- start project without tecnical school
+- change GitHub repository to private
+
+*Sergo*
+
