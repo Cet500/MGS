@@ -18,13 +18,13 @@
 
 *Plans*
 
-- (+) create map genres and types
-- (+) create datalogic scheme
-- (+) full rewrite template of site
-- (+) add new features by template of site
-- (+) add sections by template
-- (+) find legacy parser
-- (+) rewrate parser
+- [X] create map genres and types
+- [X] create datalogic scheme
+- [X] full rewrite template of site
+- [X] add new features by template of site
+- [X] add sections by template
+- [X] find legacy parser
+- [X] rewrate parser
 
 ## 02.09.2020
 
@@ -51,10 +51,10 @@
 
 *Plans*
 
-- (+) create DB
-- (+) create parser
-- (+) final update template
-- (+) create server-side
+- [X] create DB
+- [X] create parser
+- [X] final update template
+- [X] create server-side
 
 ## 03.09.2020
 
@@ -95,12 +95,12 @@
 
 *Plans*
 
-- (+) PHP
-- ( ) JS
-- (+) enable server-side ( backend )
-- ( ) system of rating ( stars )
-- (+) top - 5 of games
-- ( ) different tops - rating, popular and time
+- [X] PHP
+- [ ] JS
+- [X] enable server-side ( backend )
+- [ ] system of rating ( stars )
+- [X] top - 5 of games
+- [ ] different tops - rating, popular and time
 
 ## 07.09.2020
 
@@ -114,7 +114,7 @@
 
 *Plans*
 
-- ( ) gui for parser
+- [ ] gui for parser
 
 ## 08.09.2020
 
@@ -129,7 +129,7 @@
 
 *Plans*
 
-- (+) split data on tables
+- [X] split data on tables
 
 ## 09.09.2020
 
@@ -148,8 +148,8 @@
 
 *Plans*
 
-- (+) write a report
-- ( ) final fix data in DB
+- [X] write a report
+- [ ] final fix data in DB
 
 ## 11.09.2020
 
@@ -178,3 +178,4 @@
 
 *Sergo*
 
+- update backend
