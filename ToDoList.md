@@ -179,3 +179,9 @@
 *Sergo*
 
 - update backend
+
+## 08.10.2020
+
+*Sergo*
+
+- move css files
